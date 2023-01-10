@@ -1,7 +1,7 @@
 :root {
     /* Fonts */
-    font-family: 'Wellfleet', cursive;
-    font-family: 'Hind', sans-serif;
+    --font-serif: 'Wellfleet', cursive;
+    --font-sans-serif: 'Hind', sans-serif;
 
 
     --beige: rgba(246, 205, 139, 1);
@@ -18,4 +18,11 @@
     --h4: 1.25rem;
     --bouton: 1.75rem;
     --body: 1rem;
+    --small-text: 0.75rem;
+
+    /* Text weight */
+    --regular:400;
+    --medium:500;
+    --semibold:600;
+    --bold:700;
 }

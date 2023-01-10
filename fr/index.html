@@ -13,32 +13,121 @@
 </head>
 
 <body>
-    <header>
-        <button><img src="/public/img/icones/menu.svg" alt=""></button>
-        <a href="index.html"><img src="/public/img/icones/logo.svg" alt="Logo Dada"></a>
-        <a href="../en/index.html"><img src="/public/img/icones/language.svg" alt=""></a>
+    <header class="header" x-data="{OpenMenu : false}">
+        <div class="header__items">
+            <button class="header__menubtn" @click="OpenMenu= ! OpenMenu" aria-expanded="true" aria-controls="mainNav"
+                aria-label="Menu"><img src="/public/img/icones/menu.svg" alt="Menu"></button>
+            <a class="header__logo" href="index.html"><img src="/public/img/icones/logo.svg" alt="Logo Dada"></a>
+            <a class="header__iconlang" href="../en/index.html"><img src="/public/img/icones/language.svg"
+                    alt="Site en Anglais"></a>
+
+            <nav class="menu noscroll" id="mainNav" x-show="OpenMenu">
+                <div>
+                    <span>MENU</span>
+                </div>
+                <ul x-show="OpenMenu" x-transition:enter.duration.800ms x-transition:leave.duration.300ms>
+                    <li><a href="index.html">EXPOSITION</a></li>
+                    <li>ARTISTES
+                        <ul>
+                            <li>
+                                <a href="max-ernst.html">MAX ERNST</a>
+                            </li>
+                            <li>
+                                <a href="hannah-hoch.html">HANNAH HÖCH</a>
+                            </li>
+                            <li>
+                                <a href="raoul-hausmann.html">RAOUL HAUSMANN</a>
+                            </li>
+                            <li>
+                                <a href="sophie-taeuber-arp.html">SOPHIE TAEUBER-ARP</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="tarifs.html">TARIFS</a></li>
+                    <li><a href="#">BILLETTERIE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+
+        </div>
     </header>
-    <main>
+    <main class="page">
         <h1>EXPOSITION</h1>
         <h2>DADA&nbsp;: L'ART DE L'ABSURDE</h2>
-        <h3>DU 13 AVRIL AU 23 JUIN 2023</h2>
-            <h3>FONDATION CARTIER</h2>
-                <h3>261 BD RASPAIL 75014 PARIS</h2>
-                    <a href="tarifs.html">TARIFS & BILLETTERIE</a>
-                    <p>Tous les jours de 11h à 20h, sauf le lundi.
-                        Nocturne le mardi, jusqu'à 22h.
-                        La fermeture des salles débute à 19h45 (21h45 les mardis).</p>
-                    <h4>SOPHIE TAEUBER-ARP</h4>
-                    <p>Tête dada, 1920 - Sculpture en bois peint</p>
+        <div class="banniere">
+        <h3 class="dates">DU 13 AVRIL<br>
+            AU 23 JUIN 2023</h2>
+            <img class="oeuvre" src="/public/img/Dada.webp" alt="Oeuvre dada">
+            <h3 class="lieu">FONDATION CARTIER<br>
+                261 BD RASPAIL 75014 PARIS
+            </h3>
+            </div>
+            <a href="tarifs.html">TARIFS & BILLETTERIE</a>
+            <p>Tous les jours de 11h à 20h, sauf le lundi.
+                Nocturne le mardi, jusqu'à 22h.
+                La fermeture des salles débute à 19h45 (21h45 les mardis).</p>
+            <h4>SOPHIE TAEUBER-ARP</h4>
+
+            <div x-data="{hrefCourant: '#screen-1',}">
+                <div aria-label="Galerie interactive d'oeuvres dada">
+                    <button aria-label="Image précédente" @click="$refs.top.scrollLeft -= $refs.top.clientWidth"><img
+                            class="arrow--left" src="../public/img/icones/left.svg"
+                            alt="Flèche vers la gauche"></button>
+
+                    <button aria-label="Image suivante" @click="$refs.top.scrollLeft += $refs.top.clientWidth"><img
+                            class="arrow--right" src="../public/img/icones/right.svg"
+                            alt="Flèche vers la droite"></button>
+
+                    <div x-ref="top"
+                        @scroll.debounce.250ms.passive="hrefCourant = '#'+[...$refs.top.children].find(e=>e.getBoundingClientRect().x>=0).id">
+                        <div id="screen-1">
+                            <figure>
+                                <img src="../public/img/oeuvres/arp-2.webp" alt="Oeuvre">
+                                <figcaption>Tête dada, 1920 - Sculpture en bois peint</figcaption>
+                            </figure>
+                        </div>
+                        <div id="screen-2">
+                            <figure>
+                                <img src="../public/img/oeuvres/arp-2.webp" alt="Oeuvre">
+                                <figcaption>Sans Titre (Dada), 1923 - Huile sur toile</figcaption>
+                            </figure>
+                        </div>
+                        <div id="screen-3">
+                            <figure>
+                                <img src="../public/img/oeuvres/arp-2.webp" alt="Oeuvre">
+                                <figcaption>Der Kunstkritiker, 1919 - Lithographie et photocollage</figcaption>
+                            </figure>
+                        </div>
+                        <div id="screen-4">
+                            <figure>
+                                <img src="../public/img/oeuvres/arp-2.webp" alt="Oeuvre">
+                                <figcaption>Coupe au couteau de cuisine à travers la dernière époque culturelle
+                                    ventripotente allemande de Weimar, 1919 - Collage</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+
+
                     <a href="mouvement.html">LE MOUVEMENT DADA</a>
     </main>
-    <footer>
-        <p>Une question&nbsp;?</p>
-        <a href="mailto:contact@dada.fr">contact@dada.fr</a>
-        <p>Nous suivre</p>
-        <a href="#"><img src="/public/img/icones/facebook.svg" alt="Icône Facebook"></a>
-        <a href="#"><img src="/public/img/icones/instagram.svg" alt="Icône Instagram"></a>
-        <a href="#">Mentions Légales</a>
-        <span>© 2023 by Dada</span>
+    <footer class="footer">
+        <div class="footer__parts">
+            <div class="footer__part1">
+                <div>
+                    <p>Une question&nbsp;?</p>
+                    <a class="footer__mail" href="mailto:contact@dada.fr">contact@dada.fr</a>
+                </div>
+                <a class="footer__legals" href="#">Mentions Légales</a>
+            </div>
+            <div class="footer__part2">
+                <p>Nous suivre</p>
+                <div class="footer__socials">
+                    <a href="#"><img src="/public/img/icones/facebook.svg" alt="Icône Facebook"></a>
+                    <a href="#"><img src="/public/img/icones/instagram.svg" alt="Icône Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <p class="footer__rights">© 2023 by Dada</p>
     </footer>
 </body>

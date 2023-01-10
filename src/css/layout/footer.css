@@ -1,0 +1,44 @@
+.footer {
+    background-color: var(--black);
+    padding: 25px 10% 10px 10%;
+    color: var(--cream);
+    font-size: var(--h4);
+}
+
+.footer__parts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer__part1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer__part2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer__mail {
+    font-size: var(--body);
+    font-weight: var(--medium);
+}
+
+.footer__legals {
+    font-size: var(--body);
+}
+
+.footer__socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer__rights {
+    text-align: right;
+    font-size: var(--small-text);
+}

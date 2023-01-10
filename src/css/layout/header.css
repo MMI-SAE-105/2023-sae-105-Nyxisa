@@ -1,0 +1,30 @@
+.header {
+    background-color: var(--cream);
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.header__items {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid var(--black);
+}
+
+.header__menubtn {
+    padding: 20px;
+    padding-bottom: 15px;
+}
+
+.header__logo {
+    width: 50px;
+}
+
+.header__iconlang {
+    padding: 20px;
+    padding-bottom: 15px;
+}

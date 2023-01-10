@@ -1,0 +1,13 @@
+/* 1. les polices via Google Font 
+2. Les libraries (Vendors) 
+3. Les variables (Utils) 
+4. Les règles générales (Base) 
+5. Les règles de composition (Layout) 
+6. Les composant d'interface (Components) */
+
+@import url('https://fonts.googleapis.com/css2?family=Wellfleet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&display=swap');
+
+@import "vendors/normalize.css";
+
+@import "utils/variables.css";

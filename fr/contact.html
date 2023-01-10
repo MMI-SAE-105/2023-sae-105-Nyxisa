@@ -52,40 +52,40 @@
 </header>
 
 <body>
-    <main>
+    <main class="marges">
         <h1>CONTACT</h1>
-        <form action="#">
-            <p>Prénom</p>
+        <form class="form" action="#">
+            <p class="form__title">Prénom</p>
             <div>
                 <label for="first-name"></label>
-                <input placeholder="Entrez votre prénom ici" type="text" name="Prénom" id="first-name" required>
+                <input class="field" placeholder="Entrez votre prénom ici" type="text" name="Prénom" id="first-name" required>
             </div>
 
-            <p>Nom</p>
+            <p class="form__title">Nom</p>
             <div>
                 <label for="last-name"></label>
-                <input placeholder="Entrez votre nom ici" type="text" name="Nom" id="last-name" required>
+                <input class="field" placeholder="Entrez votre nom ici" type="text" name="Nom" id="last-name" required>
             </div>
 
-            <p>Adresse e-mail</p>
+            <p class="form__title">Adresse e-mail</p>
             <div>
                 <label for="email"></label>
-                <input placeholder="Entrez votre e-mail ici" type="email" name="Adresse e-mail" id="email" required>
+                <input class="field" placeholder="Entrez votre e-mail ici" type="email" name="Adresse e-mail" id="email" required>
             </div>
 
-            <p>Objet</p>
+            <p class="form__title">Objet</p>
             <div>
                 <label for="object"></label>
-                <input placeholder="Entrez l'objet de votre message ici" type="text" name="Objet" id="object" required>
+                <input class="field" placeholder="Entrez l'objet de votre message ici" type="text" name="Objet" id="object" required>
             </div>
 
-            <p>Message</p>
+            <p class="form__title">Message</p>
             <div>
                 <label for="message"></label>
-                <textarea placeholder="Entrez votre message ici" name="Message" id="message" rows="5"
+                <textarea class="field" placeholder="Entrez votre message ici" name="Message" id="message" rows="5"
                     required></textarea>
             </div>
-            <button title="Valider le formulaire">ENVOYER</button>
+            <button class="form__button" title="Valider le formulaire">ENVOYER</button>
         </form>
     </main>
     <footer class="footer">

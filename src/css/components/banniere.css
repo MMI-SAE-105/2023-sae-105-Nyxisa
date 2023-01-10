@@ -1,5 +1,5 @@
 .banniere {
-margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .dates {
@@ -7,16 +7,18 @@ margin-bottom: 50px;
     padding: 30px;
     width: 80%;
     position: relative;
-    left: -11%;
     z-index: -1;
 }
 
 .oeuvre {
     margin-top: -35px;
-    margin-left: 5%;
+    margin-left: 20%;
+    width: 70%;
 }
 
 .lieu {
+    width: 90%;
+    margin: auto;
     background-color: var(--beige);
     padding: 20px;
     position: relative;
@@ -25,4 +27,3 @@ margin-bottom: 50px;
     text-align: center;
     font-size: var(--h4);
 }
-

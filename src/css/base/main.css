@@ -53,9 +53,9 @@ a {
   color: var(--cream);
 }
 
-.page {
+.marges {
   margin-top: 130px;
-  margin-inline: 9%;
+  margin-inline: 6%;
 }
 
 
@@ -65,18 +65,21 @@ a {
   font-size: var(--bouton);
   font-weight: var(--bold);
   background-color: var(--black);
-  padding: 12px;
+  padding: 20px;
   border-radius: 25px;
+  margin-inline: 7.5%;
 }
 
 .bouton2 {
   font-size: var(--bouton);
   font-weight: var(--bold);
   background-color: var(--beige);
-  padding: 6px;
+  padding: 15px;
   border-radius: 25px;
+  margin-inline: 6%;
 }
 
 .horaires {
   margin-top: 50px;
+  margin-inline: 6%;
 }

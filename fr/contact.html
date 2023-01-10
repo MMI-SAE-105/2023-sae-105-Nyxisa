@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Dada</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="icon" href="../public/icones/logo.svg">
+</head>
+
+<body>
+    <main>
+        <h1>CONTACT</h1>
+        <form action="#">
+            <p>Prénom</p>
+            <div>
+                <label for="first-name"></label>
+                <input placeholder="Entrez votre prénom ici" type="text" name="Prénom" id="first-name" required>
+            </div>
+
+            <p>Nom</p>
+            <div>
+                <label for="last-name"></label>
+                <input placeholder="Entrez votre nom ici" type="text" name="Nom" id="last-name" required>
+            </div>
+
+            <p>Adresse e-mail</p>
+            <div>
+                <label for="email"></label>
+                <input placeholder="Entrez votre e-mail ici" type="email" name="Adresse e-mail" id="email" required>
+            </div>
+
+            <p>Objet</p>
+            <div>
+                <label for="object"></label>
+                <input placeholder="Entrez l'objet de votre message ici" type="text" name="Objet" id="object" required>
+            </div>
+
+            <p>Message</p>
+            <div>
+                <label for="message"></label>
+                <textarea placeholder="Entrez votre message ici" name="Message" id="message" rows="5"
+                    required></textarea>
+            </div>
+            <button title="Valider le formulaire">ENVOYER</button>
+        </form>
+    </main>
+</body>

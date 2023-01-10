@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Rossignol Chinois - Max Ernst | Dada</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="icon" href="../public/icones/logo.svg">
+</head>
+<header class="header" x-data="{OpenMenu : false}">
+    <div class="header__items">
+        <button class="header__menubtn" @click="OpenMenu= ! OpenMenu" aria-expanded="true" aria-controls="mainNav"
+            aria-label="Menu"><img src="/public/img/icones/menu.svg" alt="Menu"></button>
+        <a class="header__logo" href="index.html"><img src="/public/img/icones/logo.svg" alt="Logo Dada"></a>
+        <a class="header__iconlang" href="../en/index.html"><img src="/public/img/icones/language.svg"
+                alt="Site en Anglais"></a>
+
+        <nav class="menu noscroll" id="mainNav" x-show="OpenMenu">
+            <div>
+                <img class="menu__img--top" src="/public/img/decowhite.webp" alt="">
+                <span class="menu__title">MENU</span>
+            </div>
+            <ul class="menu__list1" x-show="OpenMenu" x-transition:enter.duration.800ms
+                x-transition:leave.duration.300ms>
+                <li class="menu__list__item1"><a href="index.html">EXPOSITION</a></li>
+                <li class="menu__list__item1">ARTISTES
+                    <ul class="menu__list2">
+                        <li class="menu__list__item2">
+                            <a href="max-ernst.html">MAX ERNST</a>
+                        </li>
+                        <li class="menu__list__item2">
+                            <a href="hannah-hoch.html">HANNAH HÖCH</a>
+                        </li>
+                        <li class="menu__list__item2">
+                            <a href="raoul-hausmann.html">RAOUL HAUSMANN</a>
+                        </li>
+                        <li class="menu__list__item2">
+                            <a href="sophie-taeuber-arp.html">SOPHIE TAEUBER-ARP</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__list__item1"><a href="tarifs.html">TARIFS</a></li>
+                <li class="menu__list__item1"><a href="#">BILLETTERIE</a></li>
+                <li class="menu__list__item1"><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <img class="menu__img--bottom" src="/public/img/decowhite.webp" alt="">
+        </nav>
+
+    </div>
+</header>
+
+<body>
+    <main>
+        <div class="marges-top">
+            <h1>LE ROSSIGNOL CHINOIS</h1>
+            <h2>1920 - COLLAGE</h2>
+        </div>
+        <img class="oeuvre__img" src="/public/img/artistes/ernst.webp" alt="">
+        <section class="marges">
+            <h3 class="artiste__title artiste__title--bio">BIOGRAPHIE</h3>
+            <p class="artiste__text">Max Ernst, né le 2 avril 1891 à Brühl et mort le 1er avril 1976 à Paris, est un
+                peintre et sculpteur allemand
+                naturalisé
+                américain en 1948 puis français en 1958, dont l'œuvre se rattache aux mouvements dadaïste et
+                surréaliste.
+            </p>
+            <p>Max Ernst demeure à Cologne et s'intéresse au mouvement Dada.
+                En 1919, il rend visite à Paul Klee à Munich et crée ses premières peintures, impressions à la main et
+                collages; il
+                expérimente différents supports et matériaux. En 1920, il fonde le collectif Zentrale W/3 avec Jean Arp
+                et
+                Baargeld. Au
+                mois de février, ils publient une nouvelle revue La Chamade (Dilettantes, unissez-vous ! avec André
+                Breton,
+                Paul Éluard
+                et Louis Aragon.
+            </p>
+            <p>
+                Avec son comparse Baargeld, Ernst organise la Première internationale dadaïste à Berlin à la fin du mois
+                de
+                juin 1920.
+                Quelques mois plus tard, il fait la connaissance de Tristan Tzara, et retrouve Hans Arp, Sophie Taeuber
+                et
+                André Breton.
+            </p>
+            <h3 class="artiste__title">ŒUVRES</h3>
+        </section>
+        <ul class="marges" id="accordeon" x-data="{
+      open:3,
+    }">
+            <li :class="{'actif':open === 1}" @click="open = 1">
+                <figure>
+                    <img class="accordeon__img" src="/public/img/oeuvres/ernst-1.webp" alt="Collage en noir et blanc"
+                        width="150">
+                    <figcaption>
+                        <h3>Le rossignol chinois</h3>
+                        <p>Découvrez cette oeuvre en cliquant ici !</p>
+                    </figcaption>
+                </figure>
+            </li>
+            <li :class="{'actif':open === 2}" @click="open = 2">
+                <figure>
+                    <img class="accordeon__img" src="/public/img/oeuvres/ernst-2.webp" alt="Tableau d'un homme de dos"
+                        width="150">
+                    <figcaption>
+                        <h3>Sans Titre (Dada)</h3>
+                        <p>Cette peinture évoque déjà le glissement d'Ernst vers le surréalisme.</p>
+                    </figcaption>
+                </figure>
+            </li>
+            <li :class="{'actif':open === 3}" @click="open = 3">
+                <figure>
+                    <img class="accordeon__img" src="/public/img/oeuvres/ernst-bonus.webp"
+                        alt="Tableau avec des oiseaux" width="150">
+                    <figcaption>
+                        <h3>Les Cormorans</h3>
+                        <p>Les Cormorans est un collage de 1920 appartenant à une collection particulière.</p>
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
+
+
+
+
+    </main>
+    <footer class="footer">
+        <div class="footer__parts">
+            <div class="footer__part1">
+                <div>
+                    <p>Une question&nbsp;?</p>
+                    <a class="footer__mail" href="mailto:contact@dada.fr">contact@dada.fr</a>
+                </div>
+                <a class="footer__legals" href="#">Mentions Légales</a>
+            </div>
+            <div class="footer__part2">
+                <p>Nous suivre</p>
+                <div class="footer__socials">
+                    <a href="#"><img src="/public/img/icones/facebook.svg" alt="Icône Facebook"></a>
+                    <a href="#"><img src="/public/img/icones/instagram.svg" alt="Icône Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <p class="footer__rights">© 2023 by Dada</p>
+    </footer>
+</body>

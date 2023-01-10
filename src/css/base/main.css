@@ -57,3 +57,22 @@ a {
   margin-top: 130px;
   margin-inline: 9%;
 }
+
+
+/* Page Accueil */
+
+.bouton1 {
+  font-size: var(--bouton);
+  font-weight: var(--bold);
+  background-color: var(--black);
+  padding: 12px;
+  border-radius: 25px;
+}
+
+.bouton2 {
+  font-size: var(--bouton);
+  font-weight: var(--bold);
+  background-color: var(--beige);
+  padding: 6px;
+  border-radius: 25px;
+}

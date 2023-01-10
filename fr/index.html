@@ -62,46 +62,46 @@
                 261 BD RASPAIL 75014 PARIS
             </h3>
             </div>
-            <a href="tarifs.html">TARIFS & BILLETTERIE</a>
+            <a class="bouton1" href="tarifs.html">TARIFS & BILLETTERIE</a>
             <p>Tous les jours de 11h à 20h, sauf le lundi.
                 Nocturne le mardi, jusqu'à 22h.
                 La fermeture des salles débute à 19h45 (21h45 les mardis).</p>
             <h4>SOPHIE TAEUBER-ARP</h4>
 
             <div x-data="{hrefCourant: '#screen-1',}">
-                <div aria-label="Galerie interactive d'oeuvres dada">
-                    <button aria-label="Image précédente" @click="$refs.top.scrollLeft -= $refs.top.clientWidth"><img
-                            class="arrow--left" src="../public/img/icones/left.svg"
+                <div class="caroussel" aria-label="Galerie interactive d'oeuvres dada">
+                    <button class="carrousel_btn carrousel_btn--left" aria-label="Image précédente" @click="$refs.top.scrollLeft -= $refs.top.clientWidth"><img
+                            src="../public/img/icones/left.svg"
                             alt="Flèche vers la gauche"></button>
 
-                    <button aria-label="Image suivante" @click="$refs.top.scrollLeft += $refs.top.clientWidth"><img
-                            class="arrow--right" src="../public/img/icones/right.svg"
+                    <button class="carrousel_btn carrousel_btn--right" aria-label="Image suivante" @click="$refs.top.scrollLeft += $refs.top.clientWidth"><img
+                            src="../public/img/icones/right.svg"
                             alt="Flèche vers la droite"></button>
 
-                    <div x-ref="top"
+                    <div  class="carrousel__top-display" x-ref="top"
                         @scroll.debounce.250ms.passive="hrefCourant = '#'+[...$refs.top.children].find(e=>e.getBoundingClientRect().x>=0).id">
-                        <div id="screen-1">
+                        <div id="screen-1" class="carrousel__display">
                             <figure>
-                                <img src="../public/img/oeuvres/arp-2.webp" alt="Oeuvre">
-                                <figcaption>Tête dada, 1920 - Sculpture en bois peint</figcaption>
+                                <img  class="carrousel__img" src="../public/img/oeuvres/arp-2.webp" alt="Oeuvre">
+                                <figcaption class="carrousel__display__title">Tête dada, 1920 - Sculpture en bois peint</figcaption>
                             </figure>
                         </div>
-                        <div id="screen-2">
+                        <div id="screen-2" class="carrousel__display">
                             <figure>
-                                <img src="../public/img/oeuvres/arp-2.webp" alt="Oeuvre">
-                                <figcaption>Sans Titre (Dada), 1923 - Huile sur toile</figcaption>
+                                <img  class="carrousel__img" src="../public/img/oeuvres/arp-2.webp" alt="Oeuvre">
+                                <figcaption class="carrousel__display__title">Sans Titre (Dada), 1923 - Huile sur toile</figcaption>
                             </figure>
                         </div>
-                        <div id="screen-3">
+                        <div id="screen-3" class="carrousel__display">
                             <figure>
-                                <img src="../public/img/oeuvres/arp-2.webp" alt="Oeuvre">
-                                <figcaption>Der Kunstkritiker, 1919 - Lithographie et photocollage</figcaption>
+                                <img  class="carrousel__img" src="../public/img/oeuvres/arp-2.webp" alt="Oeuvre">
+                                <figcaption class="carrousel__display__title">Der Kunstkritiker, 1919 - Lithographie et photocollage</figcaption>
                             </figure>
                         </div>
-                        <div id="screen-4">
+                        <div id="screen-4" class="carrousel__display">
                             <figure>
-                                <img src="../public/img/oeuvres/arp-2.webp" alt="Oeuvre">
-                                <figcaption>Coupe au couteau de cuisine à travers la dernière époque culturelle
+                                <img  class="carrousel__img" src="../public/img/oeuvres/arp-2.webp" alt="Oeuvre">
+                                <figcaption class="carrousel__display__title">Coupe au couteau de cuisine à travers la dernière époque culturelle
                                     ventripotente allemande de Weimar, 1919 - Collage</figcaption>
                             </figure>
                         </div>
@@ -109,7 +109,7 @@
 
 
 
-                    <a href="mouvement.html">LE MOUVEMENT DADA</a>
+                    <a class="bouton2" href="mouvement.html">LE MOUVEMENT DADA</a>
     </main>
     <footer class="footer">
         <div class="footer__parts">

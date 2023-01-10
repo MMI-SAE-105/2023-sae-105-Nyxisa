@@ -83,3 +83,53 @@ a {
 .horaires {
   margin: 50px 6% 30px 6%;
 }
+
+/* Page Tarifs */
+
+.prices {
+  background-color: var(--cream);
+  margin-bottom: -50px;
+}
+
+.prices__img {
+  margin-bottom: 40px;
+}
+
+.prices__btn {
+  font-size: var(--bouton);
+  font-weight: var(--bold);
+  background-color: var(--black);
+  padding: 20px;
+  border-radius: 25px;
+  margin-inline: 25%;
+}
+
+.prices__list {
+  font-size: var(--h4);
+  margin-inline: 6%;
+  padding-left: 0px;
+}
+
+.prices__list>li {
+  list-style-type: disc;
+  margin-bottom: 1rem;
+}
+
+.prices__flex {
+  display: flex;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.prices__numbers {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--h4);
+  font-weight: var(--semibold);
+text-align: right;
+}
+
+.prices__numbers>span {
+  margin-bottom: 1rem;
+}

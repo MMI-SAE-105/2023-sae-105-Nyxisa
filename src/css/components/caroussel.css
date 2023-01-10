@@ -1,3 +1,7 @@
+.caroussel__container {
+    margin-bottom: 50px;
+}
+
 .carrousel {
     position: relative;
     margin: 1rem 0;
@@ -7,6 +11,13 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.title__caroussel {
+    font-size: var(--body);
+    font-weight: var(--bold);
+    color: var(--red);
+    text-align: center;
 }
 
 .carrousel__top-display {
@@ -25,6 +36,7 @@
 }
 
 .carrousel__btn {
+    transform: translate(0%, 250px);
     position: absolute;
     display: flex;
     align-items: center;

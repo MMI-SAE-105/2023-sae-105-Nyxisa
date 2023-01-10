@@ -18,3 +18,54 @@
 .noscroll {
     overflow: hidden;
 }
+
+.menu__img--top {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menu__img--bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.menu__title {
+    font-size: var(--h2);
+    font-weight: var(--bold);
+    text-align: right;
+    position: absolute;
+    top: 45px;
+    right: 8%;
+}
+
+.menu__list1 {
+    margin-left: -25%;
+    padding: 0;
+    font-size: var(--h3);
+    font-family: var(--font-serif);
+}
+
+.menu__list1 a {
+    color: var(--black);
+}
+
+.menu__list2 {
+    font-size: var(--body);
+    font-family: var(--font-sans-serif);
+    font-weight: var(--bold);
+    padding-left: 1rem;
+}
+
+.menu__list2 a {
+    color: var(--red);
+}
+
+.menu__list__item1 {
+    margin: 2rem 0 3rem 0;
+}
+
+.menu__list__item2 {
+    margin: 1.5rem 0 1.5rem 0;
+}

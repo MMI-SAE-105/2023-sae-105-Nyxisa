@@ -23,38 +23,41 @@
 
             <nav class="menu noscroll" id="mainNav" x-show="OpenMenu">
                 <div>
-                    <span>MENU</span>
+                    <img class="menu__img--top" src="/public/img/decowhite.webp" alt="">
+                    <span class="menu__title">MENU</span>
                 </div>
-                <ul x-show="OpenMenu" x-transition:enter.duration.800ms x-transition:leave.duration.300ms>
-                    <li><a href="index.html">EXPOSITION</a></li>
-                    <li>ARTISTES
-                        <ul>
-                            <li>
+                <ul class="menu__list1" x-show="OpenMenu" x-transition:enter.duration.800ms
+                    x-transition:leave.duration.300ms>
+                    <li class="menu__list__item1"><a href="index.html">EXPOSITION</a></li>
+                    <li class="menu__list__item1">ARTISTES
+                        <ul class="menu__list2">
+                            <li class="menu__list__item2">
                                 <a href="max-ernst.html">MAX ERNST</a>
                             </li>
-                            <li>
+                            <li class="menu__list__item2">
                                 <a href="hannah-hoch.html">HANNAH HÖCH</a>
                             </li>
-                            <li>
+                            <li class="menu__list__item2">
                                 <a href="raoul-hausmann.html">RAOUL HAUSMANN</a>
                             </li>
-                            <li>
+                            <li class="menu__list__item2">
                                 <a href="sophie-taeuber-arp.html">SOPHIE TAEUBER-ARP</a>
                             </li>
                         </ul>
                     </li>
-                    <li><a href="tarifs.html">TARIFS</a></li>
-                    <li><a href="#">BILLETTERIE</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li class="menu__list__item1"><a href="tarifs.html">TARIFS</a></li>
+                    <li class="menu__list__item1"><a href="#">BILLETTERIE</a></li>
+                    <li class="menu__list__item1"><a href="contact.html">CONTACT</a></li>
                 </ul>
+                <img class="menu__img--bottom" src="/public/img/decowhite.webp" alt="">
             </nav>
 
         </div>
     </header>
     <main>
         <section class="marges">
-        <h1>EXPOSITION</h1>
-        <h2>DADA&nbsp;: L'ART DE L'ABSURDE</h2>
+            <h1>EXPOSITION</h1>
+            <h2>DADA&nbsp;: L'ART DE L'ABSURDE</h2>
         </section>
         <div class="banniere">
             <h3 class="dates">DU 13 AVRIL<br>

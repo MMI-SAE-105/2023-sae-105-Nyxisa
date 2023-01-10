@@ -1,6 +1,5 @@
 .caroussel__background {
     background-image: url(/public/img/bg.webp);
-    position: relative;
 }
 
 .caroussel__container {
@@ -24,11 +23,12 @@
     font-weight: var(--bold);
     color: var(--red);
     text-align: center;
-    margin: 1rem;
+    margin: 2rem 0 1rem 0;
 }
 
 .carrousel__top-display {
     display: flex;
+    align-items: center;
     width: 100%;
     gap: 1rem;
     scroll-behavior: smooth;
@@ -40,6 +40,12 @@
     width: 100%;
     flex: none;
     scroll-snap-align: start;
+}
+
+.carrousel__display__title {
+    font-size: var(--body);
+    text-align: center;
+    margin: 1rem;
 }
 
 .carrousel__btn {

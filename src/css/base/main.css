@@ -80,6 +80,5 @@ a {
 }
 
 .horaires {
-  margin-top: 50px;
-  margin-inline: 6%;
+  margin: 50px 6% 30px 6%;
 }

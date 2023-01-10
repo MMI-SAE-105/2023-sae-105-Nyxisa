@@ -1,4 +1,5 @@
 .footer {
+    margin-top: 50px;
     background-color: var(--black);
     padding: 25px 10% 10px 10%;
     color: var(--cream);

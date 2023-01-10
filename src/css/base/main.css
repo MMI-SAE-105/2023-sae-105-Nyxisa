@@ -71,12 +71,13 @@ a {
 }
 
 .bouton2 {
+  color: var(--black);
   font-size: var(--bouton);
   font-weight: var(--bold);
   background-color: var(--beige);
   padding: 15px;
   border-radius: 25px;
-  margin-inline: 6%;
+  margin-inline: 6.5%;
 }
 
 .horaires {

@@ -1,0 +1,20 @@
+:root {
+    font-family: 'Wellfleet', cursive;
+    font-family: 'Hind', sans-serif;
+
+    /* Color styles */
+    --beige: rgba(246, 205, 139, 1);
+    --red: rgba(224, 52, 0, 1);
+    --black: rgba(69, 45, 66, 1);
+    --cream: rgba(247, 237, 228, 1);
+
+    /* Text-size styles */
+    /* base size: body (16px) */
+    --h1: 3rem;
+    --h1--s: 2.25rem;
+    --h2: 1.5rem;
+    --h3: 1.5rem;
+    --h4: 1.25rem;
+    --bouton: 1.75rem;
+    --body: 1rem;
+}

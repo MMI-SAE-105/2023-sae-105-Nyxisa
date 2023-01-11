@@ -54,78 +54,13 @@
 
         </div>
     </header>
-    <main>
-        <section class="marges--top">
-            <h1>EXPOSITION</h1>
-            <h2>DADA&nbsp;: L'ART DE L'ABSURDE</h2>
-        </section>
-        <div class="banniere">
-            <h3 class="dates">DU 13 AVRIL<br>
-                AU 23 JUIN 2023</h3>
-            <img class="oeuvre" src="/public/img/Dada.webp" alt="Oeuvre d'art dadaïste">
-            <h3 class="lieu">FONDATION CARTIER<br>
-                261 BD RASPAIL 75014 PARIS
-            </h3>
-        </div>
-        <a class="bouton1" href="tarifs.html">TARIFS & BILLETTERIE</a>
-        <p class="horaires">Tous les jours de 11h à 20h, sauf le lundi.
-            Nocturne le mardi, jusqu'à 22h.
-            La fermeture des salles débute à 19h45 (21h45 les mardis).</p>
-
-        <section class="caroussel__background">
-            <div class="caroussel__container" x-data="{hrefCourant: '#screen-1',}">
-                <div class="caroussel" aria-label="Galerie interactive d'oeuvres dada">
-                    <button class="carrousel__btn carrousel__btn--left" aria-label="Image précédente"
-                        @click="$refs.top.scrollLeft -= $refs.top.clientWidth"><img src="../public/img/icones/left.svg"
-                            alt="Flèche vers la gauche"></button>
-
-                    <button class="carrousel__btn carrousel__btn--right" aria-label="Image suivante"
-                        @click="$refs.top.scrollLeft += $refs.top.clientWidth"><img src="../public/img/icones/right.svg"
-                            alt="Flèche vers la droite"></button>
-
-                    <div class="carrousel__top-display" x-ref="top"
-                        @scroll.debounce.250ms.passive="hrefCourant = '#'+[...$refs.top.children].find(e=>e.getBoundingClientRect().x>=0).id">
-                        <div id="screen-1" class="carrousel__display">
-                            <h4 class="title__caroussel">SOPHIE TAEUBER-ARP</h4>
-                            <figure>
-                                <img class="carrousel__img" src="../public/img/oeuvres/arp-2.webp"
-                                    alt="Sculpture d'une tête en bois">
-                                <figcaption class="carrousel__display__title">Tête dada, 1920 - Sculpture en bois peint
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div id="screen-2" class="carrousel__display">
-                            <h4 class="title__caroussel">MAX ERNST</h4>
-                            <figure>
-                                <img class="carrousel__img" src="../public/img/oeuvres/ernst-2.webp"
-                                    alt="Tableau d'un homme de dos">
-                                <figcaption class="carrousel__display__title">Sans Titre (Dada), 1923 - Huile sur toile
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div id="screen-3" class="carrousel__display">
-                            <h4 class="title__caroussel">HANNAH HÖCH</h4>
-                            <figure>
-                                <img class="carrousel__img" src="../public/img/oeuvres/hoch-1.webp"
-                                    alt="Collage d'yeux colorés">
-                                <figcaption class="carrousel__display__title">Strauss, 1965 - Collage</figcaption>
-                            </figure>
-                        </div>
-                        <div id="screen-4" class="carrousel__display">
-                            <h4 class="title__caroussel">RAOUL HAUSMANN</h4>
-                            <figure>
-                                <img class="carrousel__img" src="../public/img/oeuvres/hausmann-1.webp"
-                                    alt="Collage de lettres et de photographies">
-                                <figcaption class="carrousel__display__title">ABCD, 1924, Raoul Hausmann</figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <a class="bouton2" href="mouvement.html">LE MOUVEMENT DADA</a>
+    <main class="marges--top">
+        <div class="choice__flex">
+        <a href="en/index.html"><img class="choice__img" src="/public/img/flag_en.webp" alt="Drapeau anglais"></a>
+        <h2>SITE EN ANGLAIS</h2>
+        <a href="fr/index.html"><img class="choice__img" src="/public/img/flag_fr.webp" alt="Drapeau français"></a>
+        <h2>SITE EN FRANÇAIS</h2>
+    </div>
     </main>
     <footer class="footer">
         <div class="footer__parts">

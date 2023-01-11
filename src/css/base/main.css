@@ -240,3 +240,16 @@ blockquote:after {
 .mouvement__paragraph {
   margin-bottom: 3rem;
 }
+
+/* Page index choix langue*/
+
+.choice__flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.choice__img {
+  border-radius: 10px;
+}

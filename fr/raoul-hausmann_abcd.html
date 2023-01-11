@@ -9,48 +9,49 @@
     <script defer src="https://unpkg.com/alpinejs"></script>
     <link rel="icon" href="../public/icones/logo.svg">
 </head>
+
 <body>
-<header class="header" x-data="{OpenMenu : false}">
-    <div class="header__items">
-        <button class="header__menubtn" @click="OpenMenu= ! OpenMenu" aria-expanded="true" aria-controls="mainNav"
-            aria-label="Menu"><img src="/public/img/icones/menu.svg" alt="Menu"></button>
-        <a class="header__logo" href="index.html"><img src="/public/img/icones/logo.svg" alt="Logo Dada"></a>
-        <a class="header__iconlang" href="../en/index.html"><img src="/public/img/icones/language.svg"
-                alt="Site en Anglais"></a>
+    <header class="header" x-data="{OpenMenu : false}">
+        <div class="header__items">
+            <button class="header__menubtn" @click="OpenMenu= ! OpenMenu" aria-expanded="true" aria-controls="mainNav"
+                aria-label="Menu"><img src="/public/img/icones/menu.svg" alt="Menu"></button>
+            <a class="header__logo" href="index.html"><img src="/public/img/icones/logo.svg" alt="Logo Dada"></a>
+            <a class="header__iconlang" href="../en/index.html"><img src="/public/img/icones/language.svg"
+                    alt="Site en Anglais"></a>
 
-        <nav class="menu noscroll" id="mainNav" x-show="OpenMenu">
-            <div>
-                <img class="menu__img--top" src="/public/img/decowhite.webp" alt="">
-                <span class="menu__title">MENU</span>
-            </div>
-            <ul class="menu__list1" x-show="OpenMenu" x-transition:enter.duration.800ms
-                x-transition:leave.duration.300ms>
-                <li class="menu__list__item1"><a href="index.html">EXPOSITION</a></li>
-                <li class="menu__list__item1"><a href="mouvement.html">ARTISTES</a>
-                    <ul class="menu__list2">
-                        <li class="menu__list__item2">
-                            <a href="max-ernst.html">MAX ERNST</a>
-                        </li>
-                        <li class="menu__list__item2">
-                            <a href="hannah-hoch.html">HANNAH HÖCH</a>
-                        </li>
-                        <li class="menu__list__item2">
-                            <a href="raoul-hausmann.html">RAOUL HAUSMANN</a>
-                        </li>
-                        <li class="menu__list__item2">
-                            <a href="sophie-taeuber-arp.html">SOPHIE TAEUBER-ARP</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu__list__item1"><a href="tarifs.html">TARIFS</a></li>
-                <li class="menu__list__item1"><a href="#">BILLETTERIE</a></li>
-                <li class="menu__list__item1"><a href="contact.html">CONTACT</a></li>
-            </ul>
-            <img class="menu__img--bottom" src="/public/img/decowhite.webp" alt="">
-        </nav>
+            <nav class="menu noscroll" id="mainNav" x-show="OpenMenu">
+                <div>
+                    <img class="menu__img--top" src="/public/img/decowhite.webp" alt="">
+                    <span class="menu__title">MENU</span>
+                </div>
+                <ul class="menu__list1" x-show="OpenMenu" x-transition:enter.duration.800ms
+                    x-transition:leave.duration.300ms>
+                    <li class="menu__list__item1"><a href="index.html">EXPOSITION</a></li>
+                    <li class="menu__list__item1"><a href="mouvement.html">ARTISTES</a>
+                        <ul class="menu__list2">
+                            <li class="menu__list__item2">
+                                <a href="max-ernst.html">MAX ERNST</a>
+                            </li>
+                            <li class="menu__list__item2">
+                                <a href="hannah-hoch.html">HANNAH HÖCH</a>
+                            </li>
+                            <li class="menu__list__item2">
+                                <a href="raoul-hausmann.html">RAOUL HAUSMANN</a>
+                            </li>
+                            <li class="menu__list__item2">
+                                <a href="sophie-taeuber-arp.html">SOPHIE TAEUBER-ARP</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__list__item1"><a href="tarifs.html">TARIFS</a></li>
+                    <li class="menu__list__item1"><a href="#">BILLETTERIE</a></li>
+                    <li class="menu__list__item1"><a href="contact.html">CONTACT</a></li>
+                </ul>
+                <img class="menu__img--bottom" src="/public/img/decowhite.webp" alt="">
+            </nav>
 
-    </div>
-</header>
+        </div>
+    </header>
 
     <main>
         <div class="marges--top">
@@ -60,13 +61,13 @@
         <img class="oeuvre__img" src="/public/img/oeuvres/hausmann-1.webp" alt="Collage de lettres et de photographies">
         <section class="marges">
             <h3 class="oeuvre__title oeuvre__title--bio">À PROPOS DE L'ŒUVRE</h3>
-            <p class="oeuvre__text">Avec ce photomontage – procédé employé par Raoul Hausmann dès 1918 –, les multiples
+            <p class="oeuvre__text">Avec ce photomontage - procédé employé par Raoul Hausmann dès 1918 -, les multiples
                 possibilités du collage sont
                 exploitées.
             </p>
-            <p class="paragraph">ABCD montre toute la maîtrise acquise par l’artiste : figures, objets, lettres et
+            <p class="paragraph">ABCD montre toute la maîtrise acquise par l'artiste&nbsp;: figures, objets, lettres et
                 chiffres se mêlent étroitement. La
-                bouche ouverte de l’artiste laisse échapper les quatre premières lettres de l’alphabet, ajoutant à la
+                bouche ouverte de l'artiste laisse échapper les quatre premières lettres de l'alphabet, ajoutant à la
                 dimension visuelle
                 une dimension sonore, appuyée par les lettres éparpillées, qui forment le mot « VOCE » [voix].
             </p>

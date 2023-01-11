@@ -66,6 +66,11 @@ a {
   font-size: var(--h1--s);
 }
 
+.paragraph {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 
 /* Page Accueil */
 
@@ -189,4 +194,6 @@ a {
 
 /* Page mouvement */
 
-.mouvement__texte
+.mouvement__paragraph {
+  margin-bottom: 3rem;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sans Titre (Dada) - Max Ernst | Dada</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="icon" href="../public/icones/logo.svg">
+</head>
+<header class="header" x-data="{OpenMenu : false}">
+    <div class="header__items">
+        <button class="header__menubtn" @click="OpenMenu= ! OpenMenu" aria-expanded="true" aria-controls="mainNav"
+            aria-label="Menu"><img src="/public/img/icones/menu.svg" alt="Menu"></button>
+        <a class="header__logo" href="index.html"><img src="/public/img/icones/logo.svg" alt="Logo Dada"></a>
+        <a class="header__iconlang" href="../en/index.html"><img src="/public/img/icones/language.svg"
+                alt="Site en Anglais"></a>
+
+        <nav class="menu noscroll" id="mainNav" x-show="OpenMenu">
+            <div>
+                <img class="menu__img--top" src="/public/img/decowhite.webp" alt="">
+                <span class="menu__title">MENU</span>
+            </div>
+            <ul class="menu__list1" x-show="OpenMenu" x-transition:enter.duration.800ms
+                x-transition:leave.duration.300ms>
+                <li class="menu__list__item1"><a href="index.html">EXPOSITION</a></li>
+                <li class="menu__list__item1"><a href="mouvement.html">ARTISTES</a>
+                    <ul class="menu__list2">
+                        <li class="menu__list__item2">
+                            <a href="max-ernst.html">MAX ERNST</a>
+                        </li>
+                        <li class="menu__list__item2">
+                            <a href="hannah-hoch.html">HANNAH HÖCH</a>
+                        </li>
+                        <li class="menu__list__item2">
+                            <a href="raoul-hausmann.html">RAOUL HAUSMANN</a>
+                        </li>
+                        <li class="menu__list__item2">
+                            <a href="sophie-taeuber-arp.html">SOPHIE TAEUBER-ARP</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__list__item1"><a href="tarifs.html">TARIFS</a></li>
+                <li class="menu__list__item1"><a href="#">BILLETTERIE</a></li>
+                <li class="menu__list__item1"><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <img class="menu__img--bottom" src="/public/img/decowhite.webp" alt="">
+        </nav>
+
+    </div>
+</header>
+
+<body>
+    <main>
+        <div class="marges--top">
+            <h1 class="titre">COUPE AU COUTEAU DE CUISINE</h1>
+            <h2>1919 – COLLAGE</h2>
+        </div>
+        <img class="oeuvre__img" src="/public/img/oeuvres/hoch-2.webp" alt="Sculpture d'une tête en bois">
+        <section class="marges">
+            <h3 class="oeuvre__title oeuvre__title--bio">À PROPOS DE L'ŒUVRE</h3>
+            <p class="oeuvre__text">Si l'on observe attentivement la cacophonie d'images apparemment aléatoires qui composent le photomontage à grande
+            échelle de Hannah Höch, une coupe transversale du milieu culturel et politique de l'Allemagne de Weimar apparaît. Ici,
+            le "couteau de cuisine Dada" - une métaphore du découpage minutieux de Höch - coupe une bande du bas à droite vers le
+            haut à gauche, séparant les éléments Dada et "anti-dada".
+            </p>
+            <p class="paragraph">Si l'on regarde de plus près, l'image du Kaiser Guillaume II apparaît, debout dans ses atours impériaux, dominant avec
+            indignation la moitié droite de la composition. Entouré de têtes et de corps désincarnés, de fragments de texte, de
+            morceaux de machines, de bâtiments, de cartes et de foules, le Kaiser semble se fondre dans le décor. Ailleurs, des
+            femmes dansent, patinent et grimpent, tandis que des hommes se tiennent au garde-à-vous ou sont amenés à participer, à
+            leur insu, à des activités absurdes et parfois violentes. Cette œuvre densément peuplée est difficile, voire impossible,
+            à appréhender d'un seul coup. Bien que complexe, il vaut la peine de s'y attarder pour comprendre la distribution des
+            personnages et ce qu'ils nous disent de l'œuvre et des thèmes plus larges de Berlin Dada.
+            </p>
+            <p class="paragraph">Cut with the Kitchen Knife est un photomontage, réalisé en découpant des photographies dans des publications de masse et
+            en les collant sur un support pour créer de nouvelles juxtapositions et de nouvelles significations. Il s'agit d'une
+            œuvre d'art complexe et stratifiée qui témoigne du moment tumultueux où elle a été créée.
+            </p>
+            Comme le dira plus tard Höch :
+            <blockquote>
+                <p>"Nous [les dadaïstes] nous considérions comme des ingénieurs, nous soutenions que nous construisions des choses, nous
+                disions que nous assemblions nos œuvres comme des monteurs."</p>
+            </blockquote>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__parts">
+            <div class="footer__part1">
+                <div>
+                    <p>Une question&nbsp;?</p>
+                    <a class="footer__mail" href="mailto:contact@dada.fr">contact@dada.fr</a>
+                </div>
+                <a class="footer__legals" href="#">Mentions Légales</a>
+            </div>
+            <div class="footer__part2">
+                <p>Nous suivre</p>
+                <div class="footer__socials">
+                    <a href="#"><img src="/public/img/icones/facebook.svg" alt="Icône Facebook"></a>
+                    <a href="#"><img src="/public/img/icones/instagram.svg" alt="Icône Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <p class="footer__rights">© 2023 by Dada</p>
+    </footer>
+</body>

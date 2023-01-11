@@ -71,6 +71,35 @@ a {
   margin-bottom: 1rem;
 }
 
+blockquote {
+  position: relative;
+  padding: 40px 60px;
+}
+
+blockquote p {
+  margin: 0;
+  font-size: var(--h4);
+}
+
+blockquote:before {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  content: "“";
+  font-family: var(--font-serif);
+  font-size: 40px;
+  color:  var(--red);
+}
+
+blockquote:after {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  content: "”";
+  font-family: var(--font-serif);
+  font-size: 40px;
+  color: var(--red);
+}
 
 /* Page Accueil */
 

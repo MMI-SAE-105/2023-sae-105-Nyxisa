@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sans Titre (Dada) - Max Ernst | Dada</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="icon" href="../public/icones/logo.svg">
+</head>
+<header class="header" x-data="{OpenMenu : false}">
+    <div class="header__items">
+        <button class="header__menubtn" @click="OpenMenu= ! OpenMenu" aria-expanded="true" aria-controls="mainNav"
+            aria-label="Menu"><img src="/public/img/icones/menu.svg" alt="Menu"></button>
+        <a class="header__logo" href="index.html"><img src="/public/img/icones/logo.svg" alt="Logo Dada"></a>
+        <a class="header__iconlang" href="../en/index.html"><img src="/public/img/icones/language.svg"
+                alt="Site en Anglais"></a>
+
+        <nav class="menu noscroll" id="mainNav" x-show="OpenMenu">
+            <div>
+                <img class="menu__img--top" src="/public/img/decowhite.webp" alt="">
+                <span class="menu__title">MENU</span>
+            </div>
+            <ul class="menu__list1" x-show="OpenMenu" x-transition:enter.duration.800ms
+                x-transition:leave.duration.300ms>
+                <li class="menu__list__item1"><a href="index.html">EXPOSITION</a></li>
+                <li class="menu__list__item1"><a href="mouvement.html">ARTISTES</a>
+                    <ul class="menu__list2">
+                        <li class="menu__list__item2">
+                            <a href="max-ernst.html">MAX ERNST</a>
+                        </li>
+                        <li class="menu__list__item2">
+                            <a href="hannah-hoch.html">HANNAH HÖCH</a>
+                        </li>
+                        <li class="menu__list__item2">
+                            <a href="raoul-hausmann.html">RAOUL HAUSMANN</a>
+                        </li>
+                        <li class="menu__list__item2">
+                            <a href="sophie-taeuber-arp.html">SOPHIE TAEUBER-ARP</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__list__item1"><a href="tarifs.html">TARIFS</a></li>
+                <li class="menu__list__item1"><a href="#">BILLETTERIE</a></li>
+                <li class="menu__list__item1"><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <img class="menu__img--bottom" src="/public/img/decowhite.webp" alt="">
+        </nav>
+
+    </div>
+</header>
+
+<body>
+    <main>
+        <div class="marges--top">
+            <h1 class="titre">SANS TITRE (DADA)</h1>
+            <h2>1923 - HUILE SUR TOILE</h2>
+        </div>
+        <img class="oeuvre__img" src="/public/img/oeuvres/ernst-2.webp" alt="Tableau d'un homme de dos">
+        <section class="marges">
+            <h3 class="oeuvre__title oeuvre__title--bio">À PROPOS DE L'ŒUVRE</h3>
+            <p class="oeuvre__text">Le titre donné par Max Ernst au présent tableau - Sans titre. (Dada) - ne laisse aucun doute sur son attachement à ce
+            mouvement. L'artiste, qui se faisait appeler "Dadamax Ernst", était l'un des principaux membres des dadaïstes de Cologne
+            avec l'artiste et poète Johannes Baargeld, qui appartenait au parti communiste, et l'artiste expérimental Hans Arp.
+            Cependant, la toile est datée de 1922 ou 1923, date à laquelle Ernst s'était installé à Paris, où il allait bientôt
+            rejoindre le groupe surréaliste, alors à l'époque des sommeils.
+            </p>
+            <p class="paragraph">La progression naturelle du dadaïsme vers le surréalisme est très évidente dans la peinture d'Ernst. Une personne, dos
+            au spectateur, se tient face à une grande spirale dans une pièce contenant plusieurs objets flottants absurdes. Chaque
+            détail est représenté de manière réaliste, mais lorsqu'on la considère dans son ensemble, la composition présente une
+            discontinuité inexplicable. En retirant les différents éléments de leur contexte, Ernst ne crée pas seulement de
+            nouvelles formes mais atteint des significations fantaisistes et étranges.
+            </p>
+            <p class="paragraph">Bien qu'il s'agisse d'une peinture à l'huile, Ernst utilise les procédés du collage. De 1918 à 1924, l'artiste exploite
+            au maximum l'usage satirique de cette technique avec une mordant qui rappelle les photomontages de John Heartfield et
+            George Grosz.
+            </p>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__parts">
+            <div class="footer__part1">
+                <div>
+                    <p>Une question&nbsp;?</p>
+                    <a class="footer__mail" href="mailto:contact@dada.fr">contact@dada.fr</a>
+                </div>
+                <a class="footer__legals" href="#">Mentions Légales</a>
+            </div>
+            <div class="footer__part2">
+                <p>Nous suivre</p>
+                <div class="footer__socials">
+                    <a href="#"><img src="/public/img/icones/facebook.svg" alt="Icône Facebook"></a>
+                    <a href="#"><img src="/public/img/icones/instagram.svg" alt="Icône Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <p class="footer__rights">© 2023 by Dada</p>
+    </footer>
+</body>

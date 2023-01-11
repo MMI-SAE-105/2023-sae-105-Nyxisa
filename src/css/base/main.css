@@ -199,6 +199,19 @@ blockquote:after {
   margin-top: 3rem;
 }
 
+
+#accordeon>li:not(.actif) p {
+  display: none;
+  transition: transform 0.5s;
+}
+
+#accordeon>li:not(.actif) h3 {
+  transform: rotate(90deg) translateY(-3rem);
+  transform-origin: top left;
+  transition: transform 0.5s;
+}
+
+
 /* Page oeuvre */
 
 .oeuvre__img {

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Ernst | Dada</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="icon" href="../public/icones/logo.svg">
+</head>
+<header class="header" x-data="{OpenMenu : false}">
+    <div class="header__items">
+        <button class="header__menubtn" @click="OpenMenu= ! OpenMenu" aria-expanded="true" aria-controls="mainNav"
+            aria-label="Menu"><img src="/public/img/icones/menu.svg" alt="Menu"></button>
+        <a class="header__logo" href="index.html"><img src="/public/img/icones/logo.svg" alt="Logo Dada"></a>
+        <a class="header__iconlang" href="../en/index.html"><img src="/public/img/icones/language.svg"
+                alt="Site en Anglais"></a>
+
+        <nav class="menu noscroll" id="mainNav" x-show="OpenMenu">
+            <div>
+                <img class="menu__img--top" src="/public/img/decowhite.webp" alt="">
+                <span class="menu__title">MENU</span>
+            </div>
+            <ul class="menu__list1" x-show="OpenMenu" x-transition:enter.duration.800ms
+                x-transition:leave.duration.300ms>
+                <li class="menu__list__item1"><a href="index.html">EXPOSITION</a></li>
+                <li class="menu__list__item1"><a href="mouvement.html">ARTISTES</a>
+                    <ul class="menu__list2">
+                        <li class="menu__list__item2">
+                            <a href="max-ernst.html">MAX ERNST</a>
+                        </li>
+                        <li class="menu__list__item2">
+                            <a href="hannah-hoch.html">HANNAH HÖCH</a>
+                        </li>
+                        <li class="menu__list__item2">
+                            <a href="raoul-hausmann.html">RAOUL HAUSMANN</a>
+                        </li>
+                        <li class="menu__list__item2">
+                            <a href="sophie-taeuber-arp.html">SOPHIE TAEUBER-ARP</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__list__item1"><a href="tarifs.html">TARIFS</a></li>
+                <li class="menu__list__item1"><a href="#">BILLETTERIE</a></li>
+                <li class="menu__list__item1"><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <img class="menu__img--bottom" src="/public/img/decowhite.webp" alt="">
+        </nav>
+
+    </div>
+</header>
+
+<body>
+    <main>
+        <div class="marges--top">
+            <h1 class="titre">HANNAH HÖCH</h1>
+            <h2>1889 - 1978</h2>
+        </div>
+        <img class="artiste__img" src="/public/img/artistes/hoch.webp" alt="Hannah Höch">
+        <section class="marges">
+            <h3 class="artiste__title artiste__title--bio">BIOGRAPHIE</h3>
+
+            <p class="artiste__text">Hannah Höch, née Anna Therese Johanne Höch le 1er novembre 1889 à Gotha (Allemagne)
+                et morte le 31 mai 1978 à Berlin,
+                était une artiste plasticienne dada. Avec Hausmann, elle expérimente le photomontage et le
+                découpage/collage d'images à
+                partir de cartes postales que les soldats envoient du front à leur famille. Elle fait de cette pratique
+                un instrument de
+                critique sociale et politique. L'une de ses préoccupations est la représentation de la "femme nouvelle",
+                son
+                identification sociale et personnelle dans la République de Weimar, et la dénonciation de la vision
+                machiste et misogyne
+                qui perdure dans la presse populaire.
+            </p>
+            <p class="paragraph">Hannah Höch est la seule femme à participer activement aux manifestations Dada de
+                Berlin : percussionniste de couvercle
+                en fer-blanc dans l'« Antisymphonie » donnée par Jefim Golyscheff (avril 1919), exposition de
+                photomontages et collages
+                à la Première Expo Dada de Berlin (juin 1919), présentation de poupées Dada à la Foire internationale
+                Dada (1920).
+            </p>
+            <p class="paragraph">
+                Lorsque Dada prend fin, elle se rapproche du mouvement De Stijl aux Pays-Bas. En 1926, elle s'installe à
+                La Haye où elle
+                partage sa vie avec l'écrivaine Til Brugman.
+            </p>
+            <blockquote>
+                <p>Je suis restée fidèle au photomontage et au collage. Jusqu’à ce jour, j’ai tenté d’exprimer, avec ces
+                    techniques, mes
+                    pensées, mes critiques, mes sarcasmes mais aussi le malheur et la beauté.</p>
+            </blockquote>
+            <h3 class="artiste__title">ŒUVRES</h3>
+        </section>
+        <ul class="marges" id="accordeon" x-data="{
+      open:3,
+    }">
+            <li :class="{'actif':open === 1}" @click="open = 1">
+                <figure>
+                    <a href="hannah-hoch_coupe-au-couteau.html">
+                        <img class="accordeon__img" src="/public/img/oeuvres/hoch-1.webp"
+                            alt="Collage d'une multitude d'images" width="150">
+                    </a>
+                    <figcaption>
+                        <h3>Strauss</h3>
+                        <p>Un collage à l'imagerie métaphorique et surréaliste</p>
+                    </figcaption>
+                </figure>
+            </li>
+            <li :class="{'actif':open === 2}" @click="open = 2">
+                <figure>
+                    <a href="hannah-hoch_strauss.html">
+                        <img class="accordeon__img" src="/public/img/oeuvres/hoch-2.webp" alt="Collage d'yeux colorés"
+                            width="150">
+                    </a>
+                    <figcaption>
+                        <h3>Coupe au couteau de cuisine</h3>
+                        <p>Découvrez cette oeuvre en cliquant dessus !</p>
+                    </figcaption>
+                </figure>
+            </li>
+            <li :class="{'actif':open === 3}" @click="open = 3">
+                <figure>
+                    <a href="#">
+                        <img class="accordeon__img" src="/public/img/oeuvres/hoch-bonus.webp"
+                            alt="Collage d'image évoquant un oiseau survolant un village" width="150">
+                    </a>
+                    <figcaption>
+                        <h3>Menace en rase campagne</h3>
+                        <p>Menace en rase campagne est un collage de 1920 appartenant à une collection particulière.</p>
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
+    </main>
+    <footer class="footer">
+        <div class="footer__parts">
+            <div class="footer__part1">
+                <div>
+                    <p>Une question&nbsp;?</p>
+                    <a class="footer__mail" href="mailto:contact@dada.fr">contact@dada.fr</a>
+                </div>
+                <a class="footer__legals" href="#">Mentions Légales</a>
+            </div>
+            <div class="footer__part2">
+                <p>Nous suivre</p>
+                <div class="footer__socials">
+                    <a href="#"><img src="/public/img/icones/facebook.svg" alt="Icône Facebook"></a>
+                    <a href="#"><img src="/public/img/icones/instagram.svg" alt="Icône Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <p class="footer__rights">© 2023 by Dada</p>
+    </footer>
+</body>

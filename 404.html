@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-<title>404 | Page non trouvée</title>
-<h1>Page non trouvée</h1>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | Page non trouvée</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="icon" href="../public/icones/logo.svg">
+</head>
+<h1>PAGE NON TROUVÉE</h1>
 <H2>ERREUR 404</H2>
 <form action="https://google.com/" method="GET" x-data="{ q:'', }" x-on:submit="q = q + ' site:dada.lisa-cingolani.fr'">
-    <label for="q">Que cherchez-vous ?</label>
+    <label for="q">Que cherchez-vous ?</label><br>
     <input type="text" id="q" name="q" x-model="q">
     <button type="submit">Rechercher</button>
 </form>
+
+

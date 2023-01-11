@@ -1,0 +1,25 @@
+.error__btn {
+background-color: var(--beige);
+padding: 10px;
+font-weight: var(--bold);
+border-radius: 5px;
+}
+
+.error__input {
+outline: 2px solid var(--black);
+background: var(--cream);
+}
+
+.plan__titre {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.plan {
+    padding-left: 10px;
+}
+
+.plan a {
+    color: var(--black);
+    font-size: larger;
+}

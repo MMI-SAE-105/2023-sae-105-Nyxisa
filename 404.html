@@ -8,14 +8,28 @@
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="icon" href="../public/icones/logo.svg">
 </head>
-<main>
+<main class="marges">
 <h1>PAGE NON TROUVÉE</h1>
 <H2>ERREUR 404</H2>
 <form action="https://google.com/" method="GET" x-data="{ q:'', }" x-on:submit="q = q + ' site:dada.lisa-cingolani.fr'">
     <label for="q">Que cherchez-vous&nbsp;?</label><br>
-    <input type="text" id="q" name="q" x-model="q">
-    <button type="submit">Rechercher</button>
+    <input class="error__input" type="text" id="q" name="q" x-model="q">
+    <button class="error__btn" type="submit">RECHERCHER</button>
 </form>
+<div class="plan">
+<h3 class="plan__titre">PLAN DU SITE&nbsp;:</h3>
+<h4 class="paragraph"><a href="fr/mouvement.html">EXPOSITION</a></h4>
+<h4 class="paragraph"><a href="fr/index.html">ARTISTES</a></h4>
+<div class="plan__list">
+<h5 class="paragraph"><a href="/fr/max-ernst.html">Max Ernst</a></h5>
+<h5 class="paragraph"><a href="/fr/hannah-hoch.html">Hannah Höch</a></h5>
+<h5 class="paragraph"><a href="/fr/raoul-hausmann.html">Raoul Hausmann</a></h5>
+<h5 class="paragraph"><a href="/fr/sophie-taeuber-arp.html">Sophie Taeuber-Arp</a></h5>
+</div>
+<h4 class="paragraph"><a href="fr/tarifs.html">TARIFS</a></h4>
+<h4 class="paragraph"><a href="#billeterie">BILLETERIE</a></h4>
+<h4 class="paragraph"><a href="fr/contact.html">CONTACT</a></h4>
+</div>
 </main>
 
 

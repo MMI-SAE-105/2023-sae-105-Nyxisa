@@ -53,13 +53,17 @@ a {
   color: var(--cream);
 }
 
-.marges-top {
+.marges--top {
   margin-top: 130px;
   margin-inline: 6%;
 }
 
 .marges {
   margin-inline: 6%;
+}
+
+.titre {
+  font-size: var(--h1--s);
 }
 
 
@@ -182,3 +186,6 @@ a {
 .oeuvre__text {
   margin-top: 3rem;
 }
+
+/* Page mouvement */
+

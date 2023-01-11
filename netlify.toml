@@ -8,23 +8,23 @@
     
   [[plugins.inputs.audits]]
     output_path = "reports/fr/tarifs.html"
-    path = "/fr/tarifs.html"
+    path = "fr/tarifs.html"
 
   [[plugins.inputs.audits]]
     output_path = "reports/fr/contact.html"
-    path = "/fr/contact.html"
+    path = "fr/contact.html"
 
   [[plugins.inputs.audits]]
     output_path = "reports/fr/mouvement.html"
-    path = "/fr/mouvement.html"
+    path = "fr/mouvement.html"
 
   [[plugins.inputs.audits]]
     output_path = "reports/fr/max-ernst.html"
-    path = "/fr/max-ernst.html"
+    path = "fr/max-ernst.html"
     
   [[plugins.inputs.audits]]
     output_path = "reports/fr/max-ernst_le-rossignol-chinois.html"
-    path = "/fr/max-ernst_le-rossignol-chinois.html"
+    path = "fr/max-ernst_le-rossignol-chinois.html"
 
     
 

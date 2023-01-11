@@ -15,13 +15,14 @@
 <body>
     <header class="header" x-data="{OpenMenu : false}">
         <div class="header__items">
-            <button class="header__menubtn" @click="OpenMenu= ! OpenMenu" aria-expanded="true" aria-controls="mainNav"
+            <button class="header__menubtn" @click="OpenMenu=true" aria-expanded="true" aria-controls="mainNav"
                 aria-label="Menu"><img src="/public/img/icones/menu.svg" alt="Menu"></button>
             <a class="header__logo" href="index.html"><img src="/public/img/icones/logo.svg" alt="Logo Dada"></a>
             <a class="header__iconlang" href="../en/index.html"><img src="/public/img/icones/language.svg"
                     alt="Site en Anglais"></a>
 
             <nav class="menu noscroll" id="mainNav" x-show="OpenMenu">
+                <button class="header__menubtn--close" @click="OpenMenu=false"><img src="/public/img/icones/close.svg" alt="Fermer le menu"></button>
                 <div>
                     <img class="menu__img--top" src="/public/img/decowhite.webp" alt="">
                     <span class="menu__title">MENU</span>

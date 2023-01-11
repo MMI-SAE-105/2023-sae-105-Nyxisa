@@ -3,7 +3,7 @@
 - PRÉNOM : Lisa
 - URL du site : dada.lisa-cingolani.fr
 - URL FIGMA : https://www.figma.com/file/EIGW17bnOBHRAqY5z7sZDi/SAE-105---Lisa-Cingolani-A1?node-id=0%3A1&t=M6QSYF2I9FIZWTFt-1
-- Rapport Lighthouse page index : dada.lisa-cingolani.fr/reports/accueil.html
+- Rapport Lighthouse page index : http://dada.lisa-cingolani.fr/reports/accueil.html
 
 # Structure de départ pour la SAE 105.
 

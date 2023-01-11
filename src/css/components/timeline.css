@@ -1,4 +1,9 @@
 .timeline {
+    padding: 20px 0 20px 0;
+    background-color: var(--cream);
+}
+
+.timeline__content {
     margin-top: 50px;
     border-left: 5px dashed var(--black);
     position: relative;

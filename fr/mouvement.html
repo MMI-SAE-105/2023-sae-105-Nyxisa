@@ -4,100 +4,142 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Le mouvement Dada | Dada</title>
+    <title>Le mouvement Dada | Dada</title>
     <link rel="stylesheet" href="../src/css/styles.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
     <link rel="icon" href="../public/icones/logo.svg">
 </head>
-    <header class="header" x-data="{OpenMenu : false}">
-        <div class="header__items">
-            <button class="header__menubtn" @click="OpenMenu= ! OpenMenu" aria-expanded="true" aria-controls="mainNav"
-                aria-label="Menu"><img src="/public/img/icones/menu.svg" alt="Menu"></button>
-            <a class="header__logo" href="index.html"><img src="/public/img/icones/logo.svg" alt="Logo Dada"></a>
-            <a class="header__iconlang" href="../en/index.html"><img src="/public/img/icones/language.svg"
-                    alt="Site en Anglais"></a>
-    
-            <nav class="menu noscroll" id="mainNav" x-show="OpenMenu">
-                <div>
-                    <img class="menu__img--top" src="/public/img/decowhite.webp" alt="">
-                    <span class="menu__title">MENU</span>
-                </div>
-                <ul class="menu__list1" x-show="OpenMenu" x-transition:enter.duration.800ms
-                    x-transition:leave.duration.300ms>
-                    <li class="menu__list__item1"><a href="index.html">EXPOSITION</a></li>
-                    <li class="menu__list__item1">ARTISTES
-                        <ul class="menu__list2">
-                            <li class="menu__list__item2">
-                                <a href="max-ernst.html">MAX ERNST</a>
-                            </li>
-                            <li class="menu__list__item2">
-                                <a href="hannah-hoch.html">HANNAH HÖCH</a>
-                            </li>
-                            <li class="menu__list__item2">
-                                <a href="raoul-hausmann.html">RAOUL HAUSMANN</a>
-                            </li>
-                            <li class="menu__list__item2">
-                                <a href="sophie-taeuber-arp.html">SOPHIE TAEUBER-ARP</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu__list__item1"><a href="tarifs.html">TARIFS</a></li>
-                    <li class="menu__list__item1"><a href="#">BILLETTERIE</a></li>
-                    <li class="menu__list__item1"><a href="contact.html">CONTACT</a></li>
-                </ul>
-                <img class="menu__img--bottom" src="/public/img/decowhite.webp" alt="">
-            </nav>
-    
-        </div>
-    </header>
+<header class="header" x-data="{OpenMenu : false}">
+    <div class="header__items">
+        <button class="header__menubtn" @click="OpenMenu= ! OpenMenu" aria-expanded="true" aria-controls="mainNav"
+            aria-label="Menu"><img src="/public/img/icones/menu.svg" alt="Menu"></button>
+        <a class="header__logo" href="index.html"><img src="/public/img/icones/logo.svg" alt="Logo Dada"></a>
+        <a class="header__iconlang" href="../en/index.html"><img src="/public/img/icones/language.svg"
+                alt="Site en Anglais"></a>
+
+        <nav class="menu noscroll" id="mainNav" x-show="OpenMenu">
+            <div>
+                <img class="menu__img--top" src="/public/img/decowhite.webp" alt="">
+                <span class="menu__title">MENU</span>
+            </div>
+            <ul class="menu__list1" x-show="OpenMenu" x-transition:enter.duration.800ms
+                x-transition:leave.duration.300ms>
+                <li class="menu__list__item1"><a href="index.html">EXPOSITION</a></li>
+                <li class="menu__list__item1">ARTISTES
+                    <ul class="menu__list2">
+                        <li class="menu__list__item2">
+                            <a href="max-ernst.html">MAX ERNST</a>
+                        </li>
+                        <li class="menu__list__item2">
+                            <a href="hannah-hoch.html">HANNAH HÖCH</a>
+                        </li>
+                        <li class="menu__list__item2">
+                            <a href="raoul-hausmann.html">RAOUL HAUSMANN</a>
+                        </li>
+                        <li class="menu__list__item2">
+                            <a href="sophie-taeuber-arp.html">SOPHIE TAEUBER-ARP</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__list__item1"><a href="tarifs.html">TARIFS</a></li>
+                <li class="menu__list__item1"><a href="#">BILLETTERIE</a></li>
+                <li class="menu__list__item1"><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <img class="menu__img--bottom" src="/public/img/decowhite.webp" alt="">
+        </nav>
+
+    </div>
+</header>
+
 <body>
     <main>
         <h1>LE MOUVEMENT DADA</h1>
         <h2>DÉFINITION ET ARTISTES</h2>
-        <p>Le mouvement Dada est un mouvement artistique et littéraire avant-gardiste qui a émergé pendant la Première Guerre
-        mondiale en réaction au chaos et à la folie de la guerre.
-        Les artistes Dada rejetaient les conventions traditionnelles de l'art et cherchaient à exprimer leur mécontentement et
-        leur incrédulité face à la violence et à l'absurdité de la guerre en utilisant des méthodes provocantes et non
-        conventionnelles.
-        Le mouvement s'est développé dans plusieurs villes européennes, notamment à Zurich, Berlin et Paris, et a influencé de
-        nombreux autres mouvements artistiques à travers le monde.</p>
-        <span>1886</span>
-        <figure>
-            <img src="/public/img/artistes/hausmann.webp" alt="">
-        <figcaption>Raoul Hausmann</figcaption>
-        </figure>
-        <span>1889</span>
-        <figure>
-            <img src="/public/img/artistes/hoch.webp" alt="">
-            <figcaption>Hannah Höch</figcaption>
-        </figure>
-        <figure>
+        <p>Le mouvement Dada est un mouvement artistique et littéraire avant-gardiste qui a émergé pendant la Première
+            Guerre
+            mondiale en réaction au chaos et à la folie de la guerre.
+            Les artistes Dada rejetaient les conventions traditionnelles de l'art et cherchaient à exprimer leur
+            mécontentement et
+            leur incrédulité face à la violence et à l'absurdité de la guerre en utilisant des méthodes provocantes et
+            non
+            conventionnelles.
+            Le mouvement s'est développé dans plusieurs villes européennes, notamment à Zurich, Berlin et Paris, et a
+            influencé de
+            nombreux autres mouvements artistiques à travers le monde.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="timeline">
+            <div class="timeline__flex">
+                <div class="timeline__circle"></div>
+                <div class="timeline__top">
+                    <div class="timeline__top__line"></div>
+                    <span class="timeline__top__date">1886</span>
+                </div>
+            </div>
+            <figure class="timeline__artist">
+                <img src="/public/img/artistes/hausmann.webp" alt="">
+                <figcaption>Raoul Hausmann</figcaption>
+            </figure>
+            <div class="timeline__flex">
+                <div class="timeline__circle"></div>
+                <div class="timeline__top">
+                    <div class="timeline__top__line"></div>
+                    <span class="timeline__top__date">1889</span>
+                </div>
+</div>
+            <figure class="timeline__artist">
+                <img src="/public/img/artistes/hoch.webp" alt="">
+                <figcaption>Hannah Höch</figcaption>
+            </figure>
+
+        <figure class="timeline__artist">
             <img src="/public/img/artistes/arp.webp" alt="">
             <figcaption>Sophie Taeuber-Arp</figcaption>
         </figure>
-        <span>1891</span>
-        <figure>
+        <div class="timeline__flex">
+            <div class="timeline__circle"></div>
+            <div class="timeline__top">
+                <div class="timeline__top__line"></div>
+                <span class="timeline__top__date">1891</span>
+            </div>
+        </div>
+        <figure class="timeline__artist">
             <img src="/public/img/artistes/ernst.webp" alt="">
             <figcaption>Max Ernst</figcaption>
         </figure>
+        </div>
+        </div>
+
+
+
     </main>
-            <footer class="footer">
-                <div class="footer__parts">
-                    <div class="footer__part1">
-                        <div>
-                            <p>Une question&nbsp;?</p>
-                            <a class="footer__mail" href="mailto:contact@dada.fr">contact@dada.fr</a>
-                        </div>
-                        <a class="footer__legals" href="#">Mentions Légales</a>
-                    </div>
-                    <div class="footer__part2">
-                        <p>Nous suivre</p>
-                        <div class="footer__socials">
-                            <a href="#"><img src="/public/img/icones/facebook.svg" alt="Icône Facebook"></a>
-                            <a href="#"><img src="/public/img/icones/instagram.svg" alt="Icône Instagram"></a>
-                        </div>
-                    </div>
+    <footer class="footer">
+        <div class="footer__parts">
+            <div class="footer__part1">
+                <div>
+                    <p>Une question&nbsp;?</p>
+                    <a class="footer__mail" href="mailto:contact@dada.fr">contact@dada.fr</a>
                 </div>
-                <p class="footer__rights">© 2023 by Dada</p>
-            </footer>
+                <a class="footer__legals" href="#">Mentions Légales</a>
+            </div>
+            <div class="footer__part2">
+                <p>Nous suivre</p>
+                <div class="footer__socials">
+                    <a href="#"><img src="/public/img/icones/facebook.svg" alt="Icône Facebook"></a>
+                    <a href="#"><img src="/public/img/icones/instagram.svg" alt="Icône Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <p class="footer__rights">© 2023 by Dada</p>
+    </footer>
 </body>

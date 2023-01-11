@@ -1,0 +1,54 @@
+.timeline {
+    margin-top: 50px;
+    border-left: 5px dashed var(--black);
+    position: relative;
+    left: 10%;
+    width: 90%;
+}
+
+.timeline__flex {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.timeline__top__line {
+    width: 70%;
+    background-color: var(--beige);
+    z-index: 2;
+    height: 20px;
+}
+
+.timeline__top {
+    display: flex;
+    width: 100%;
+    gap: 5%;
+    align-items: center;
+}
+
+.timeline__circle {
+    background-color: var(--red);
+    border-radius: 50%;
+
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    left: -7%;
+
+}
+
+.timeline__top__date {
+    font-family: var(--font-serif);
+    font-size: var(--h3);
+}
+
+.timeline__artist {
+    width: 80%;
+    margin-left: 6%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.timeline__artist > figcaption {
+    text-align: center;
+}

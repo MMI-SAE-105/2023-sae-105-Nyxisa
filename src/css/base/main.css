@@ -7,7 +7,6 @@ html {
   font-size: 100%;
 }
 
-/* Les règles typographiques générales qui s'appliquent à tout le site */
 body {
   font-size: var(--body);
   font-family: var(--font-sans-serif);
@@ -16,7 +15,6 @@ body {
   line-height: 1.15;
 }
 
-/* Les règles typographiques générales des titres */
 h1 {
   margin-bottom: 1rem;
   font-family: var(--font-serif);
@@ -34,14 +32,12 @@ h3 {
   font-size: var(--h3)
 }
 
-/* permet d'annuler la mise en forme des boutons qu'applique le navigateur. */
 button {
   appearance: none;
   border: none;
   background: none;
 }
 
-/* Pour enlever l'apparence par défaut des listes */
 li {
   list-style: none;
   margin: 0;
@@ -99,6 +95,11 @@ blockquote:after {
   font-family: var(--font-serif);
   font-size: 40px;
   color: var(--red);
+}
+
+.link-text {
+  color: var(--red);
+  font-weight: var(--bold);
 }
 
 /* Page Accueil */

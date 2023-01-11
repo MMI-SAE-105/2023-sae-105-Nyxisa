@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Ernst | Dada</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="icon" href="../public/icones/logo.svg">
+</head>
+<header class="header" x-data="{OpenMenu : false}">
+    <div class="header__items">
+        <button class="header__menubtn" @click="OpenMenu= ! OpenMenu" aria-expanded="true" aria-controls="mainNav"
+            aria-label="Menu"><img src="/public/img/icones/menu.svg" alt="Menu"></button>
+        <a class="header__logo" href="index.html"><img src="/public/img/icones/logo.svg" alt="Logo Dada"></a>
+        <a class="header__iconlang" href="../en/index.html"><img src="/public/img/icones/language.svg"
+                alt="Site en Anglais"></a>
+
+        <nav class="menu noscroll" id="mainNav" x-show="OpenMenu">
+            <div>
+                <img class="menu__img--top" src="/public/img/decowhite.webp" alt="">
+                <span class="menu__title">MENU</span>
+            </div>
+            <ul class="menu__list1" x-show="OpenMenu" x-transition:enter.duration.800ms
+                x-transition:leave.duration.300ms>
+                <li class="menu__list__item1"><a href="index.html">EXPOSITION</a></li>
+                <li class="menu__list__item1"><a href="mouvement.html">ARTISTES</a>
+                    <ul class="menu__list2">
+                        <li class="menu__list__item2">
+                            <a href="max-ernst.html">MAX ERNST</a>
+                        </li>
+                        <li class="menu__list__item2">
+                            <a href="hannah-hoch.html">HANNAH HÖCH</a>
+                        </li>
+                        <li class="menu__list__item2">
+                            <a href="raoul-hausmann.html">RAOUL HAUSMANN</a>
+                        </li>
+                        <li class="menu__list__item2">
+                            <a href="sophie-taeuber-arp.html">SOPHIE TAEUBER-ARP</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__list__item1"><a href="tarifs.html">TARIFS</a></li>
+                <li class="menu__list__item1"><a href="#">BILLETTERIE</a></li>
+                <li class="menu__list__item1"><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <img class="menu__img--bottom" src="/public/img/decowhite.webp" alt="">
+        </nav>
+
+    </div>
+</header>
+
+<body>
+    <main>
+        <div class="marges--top">
+            <h1 class="titre">SOPHIE TAEUBER-ARP</h1>
+            <h2>1889 - 1943</h2>
+        </div>
+        <img class="artiste__img" src="/public/img/artistes/arp.webp" alt="Raoul Hausmann">
+        <section class="marges">
+            <h3 class="artiste__title artiste__title--bio">BIOGRAPHIE</h3>
+            <p class="artiste__text">Sophie Taeuber, née le 19 janvier 1889 à Davos, en Suisse, et morte le 13 janvier
+                1943 à Zurich, est une artiste,
+                peintre et sculptrice suisse, ayant participé aux mouvements dada puis surréaliste avec son époux, Jean
+                Arp. Son œuvre,
+                marquée par la géométrie et le rythme, embrasse des formats à deux dimensions (tableaux, travaux sur
+                tissu), à trois
+                dimensions (sculpture, reliefs) et le spectacle vivant (danse, théâtre).
+            </p>
+            <p class="paragraph">Elle s'installe à Zurich en 1915, année où elle rencontre Jean Arp et participe avec
+                lui au mouvement dada. Son talent
+                de danseuse lui ouvre les portes du Cabaret Voltaire. Cependant, elle doit utiliser un pseudonyme et
+                danser masquée, car
+                les danses pleines « d'inventions, de caprices et de bizarreries » qu'elle offre en spectacle, ne sont
+                pas en accord
+                avec l'École des arts décoratifs de Zurich où elle enseigne, de 1921 à 1929.
+            </p>
+            <p class="paragraph">
+                En 1921, elle a épousé Jean Arp, devenant ainsi Sophie Taeuber-Arp, qui est désormais son nom d'artiste
+                peintre. En
+                1927-1928, le couple se construit une maison et un atelier d'artiste, à Clamart (21, rue des
+                Châtaigniers).
+            </p>
+            <h3 class="artiste__title">ŒUVRES</h3>
+        </section>
+        <ul class="marges" id="accordeon" x-data="{
+      open:3,
+    }">
+            <li :class="{'actif':open === 1}" @click="open = 1">
+                <figure>
+                    <a href="sophie-taeuber-arp_composition-dada.html">
+                        <img class="accordeon__img" src="/public/img/oeuvres/arp-1.webp"
+                            alt="Tableau de formes géométriques dans les tons bruns" width="150">
+                    </a>
+                    <figcaption>
+                        <h3>Composition dada</h3>
+                        <p>Découvrez cette oeuvre en cliquant dessus !</p>
+                    </figcaption>
+                </figure>
+            </li>
+            <li :class="{'actif':open === 2}" @click="open = 2">
+                <figure>
+                    <a href="sophie-taeuber-arp_tete-dada.html">
+                        <img class="accordeon__img" src="/public/img/oeuvres/arp-2.webp"
+                            alt="Sculpture d'une tête en bois" width="150">
+                    </a>
+                    <figcaption>
+                        <h3>Tête dada</h3>
+                        <p>Une scultpure sur bois peint époustouflante</p>
+                    </figcaption>
+                </figure>
+            </li>
+            <li :class="{'actif':open === 3}" @click="open = 3">
+                <figure>
+                    <a href="#">
+                        <img class="accordeon__img" src="/public/img/oeuvres/arp-bonus.webp"
+                            alt="Tableau de formes géométriques" width="150">
+                    </a>
+                    <figcaption>
+                        <h3>Composition Verticale-Horizontale</h3>
+                        <p>Ce tableau est une laine sur toile datant de 1917</p>
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
+    </main>
+    <footer class="footer">
+        <div class="footer__parts">
+            <div class="footer__part1">
+                <div>
+                    <p>Une question&nbsp;?</p>
+                    <a class="footer__mail" href="mailto:contact@dada.fr">contact@dada.fr</a>
+                </div>
+                <a class="footer__legals" href="#">Mentions Légales</a>
+            </div>
+            <div class="footer__part2">
+                <p>Nous suivre</p>
+                <div class="footer__socials">
+                    <a href="#"><img src="/public/img/icones/facebook.svg" alt="Icône Facebook"></a>
+                    <a href="#"><img src="/public/img/icones/instagram.svg" alt="Icône Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <p class="footer__rights">© 2023 by Dada</p>
+    </footer>
+</body>

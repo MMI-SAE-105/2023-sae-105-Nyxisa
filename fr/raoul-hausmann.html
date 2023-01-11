@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Ernst | Dada</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="icon" href="../public/icones/logo.svg">
+</head>
+<header class="header" x-data="{OpenMenu : false}">
+    <div class="header__items">
+        <button class="header__menubtn" @click="OpenMenu= ! OpenMenu" aria-expanded="true" aria-controls="mainNav"
+            aria-label="Menu"><img src="/public/img/icones/menu.svg" alt="Menu"></button>
+        <a class="header__logo" href="index.html"><img src="/public/img/icones/logo.svg" alt="Logo Dada"></a>
+        <a class="header__iconlang" href="../en/index.html"><img src="/public/img/icones/language.svg"
+                alt="Site en Anglais"></a>
+
+        <nav class="menu noscroll" id="mainNav" x-show="OpenMenu">
+            <div>
+                <img class="menu__img--top" src="/public/img/decowhite.webp" alt="">
+                <span class="menu__title">MENU</span>
+            </div>
+            <ul class="menu__list1" x-show="OpenMenu" x-transition:enter.duration.800ms
+                x-transition:leave.duration.300ms>
+                <li class="menu__list__item1"><a href="index.html">EXPOSITION</a></li>
+                <li class="menu__list__item1"><a href="mouvement.html">ARTISTES</a>
+                    <ul class="menu__list2">
+                        <li class="menu__list__item2">
+                            <a href="max-ernst.html">MAX ERNST</a>
+                        </li>
+                        <li class="menu__list__item2">
+                            <a href="hannah-hoch.html">HANNAH HÖCH</a>
+                        </li>
+                        <li class="menu__list__item2">
+                            <a href="raoul-hausmann.html">RAOUL HAUSMANN</a>
+                        </li>
+                        <li class="menu__list__item2">
+                            <a href="sophie-taeuber-arp.html">SOPHIE TAEUBER-ARP</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__list__item1"><a href="tarifs.html">TARIFS</a></li>
+                <li class="menu__list__item1"><a href="#">BILLETTERIE</a></li>
+                <li class="menu__list__item1"><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <img class="menu__img--bottom" src="/public/img/decowhite.webp" alt="">
+        </nav>
+
+    </div>
+</header>
+
+<body>
+    <main>
+        <div class="marges--top">
+            <h1 class="titre">RAOUL HAUSMANN</h1>
+            <h2>1886 - 1971</h2>
+        </div>
+        <img class="artiste__img" src="/public/img/artistes/hausmann.webp" alt="Raoul Hausmann">
+        <section class="marges">
+            <h3 class="artiste__title artiste__title--bio">BIOGRAPHIE</h3>
+            <p class="artiste__text">Raoul Hausmann est né à Vienne le 12 juillet 1886, dans une famille
+                tchéco-hongroise.
+                Il s'installe à Berlin au début du siècle et devient en 1919 l'un des fondateurs du mouvement Dada, dont
+                il publie le
+                premier manifeste avec Tristan Tzara, Marcel Janco et George Gros.
+            </p>
+            <p class="paragraph">Hausmann compose des poèmes constitués de simples séquences phoniques sur des affiches
+                collées sur les murs. Cette forme
+                d'art appelée poésie phonique est éphémère mais encourage les artistes dadaïstes à chercher une nouvelle
+                forme
+                d'expression.
+            </p>
+            <p class="paragraph">
+                Dans les années 1920, refusant l'art dans sa forme conventionnelle, Hausmann invente le photomontage,
+                juxtapositions de
+                collages qui apportent à l'œuvre une nouvelle interprétation de l'image du monde.
+                Parallèlement à sa création artistique, Raoul Hausmann rédige de nombreux textes sur l'art. L'exigence
+                de l'artiste le
+                pousse à refuser de signer ses œuvres.
+                Installé à Limoges de 1950 jusqu'à sa mort en 1971, l'artiste compose plus de 80 toiles, dessins,
+                aquarelles en
+                utilisant tous les matériaux à sa disposition.
+            </p>
+            <h3 class="artiste__title">ŒUVRES</h3>
+        </section>
+        <ul class="marges" id="accordeon" x-data="{
+      open:3,
+    }">
+            <li :class="{'actif':open === 1}" @click="open = 1">
+                <figure>
+                    <a href="raoul-hausmann_abcd.html">
+                        <img class="accordeon__img" src="/public/img/oeuvres/hausmann-1.webp"
+                            alt="Collage d'une multitude d'images" width="150">
+                    </a>
+                    <figcaption>
+                        <h3>ABCD</h3>
+                        <p>Découvrez cette oeuvre en cliquant dessus !</p>
+                    </figcaption>
+                </figure>
+            </li>
+            <li :class="{'actif':open === 2}" @click="open = 2">
+                <figure>
+                    <a href="raoul-hausmann_der-kunstkritiker.html">
+                        <img class="accordeon__img" src="/public/img/oeuvres/hausmann-2.webp"
+                            alt="Collage représentant un homme'" width="150">
+                    </a>
+                    <figcaption>
+                        <h3>Der Kunstkritiker</h3>
+                        <p>Un collage critiquant ceux qui critiquent</p>
+                    </figcaption>
+                </figure>
+            </li>
+            <li :class="{'actif':open === 3}" @click="open = 3">
+                <figure>
+                    <a href="#">
+                        <img class="accordeon__img" src="/public/img/oeuvres/hausmann-bonus.webp"
+                            alt="Collage d'image et gouache, écrit DADA RAOUL" width="150">
+                    </a>
+                    <figcaption>
+                        <h3>Dada Raoul</h3>
+                        <p>Collage photographique et gouache sur papier</p>
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
+    </main>
+    <footer class="footer">
+        <div class="footer__parts">
+            <div class="footer__part1">
+                <div>
+                    <p>Une question&nbsp;?</p>
+                    <a class="footer__mail" href="mailto:contact@dada.fr">contact@dada.fr</a>
+                </div>
+                <a class="footer__legals" href="#">Mentions Légales</a>
+            </div>
+            <div class="footer__part2">
+                <p>Nous suivre</p>
+                <div class="footer__socials">
+                    <a href="#"><img src="/public/img/icones/facebook.svg" alt="Icône Facebook"></a>
+                    <a href="#"><img src="/public/img/icones/instagram.svg" alt="Icône Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <p class="footer__rights">© 2023 by Dada</p>
+    </footer>
+</body>

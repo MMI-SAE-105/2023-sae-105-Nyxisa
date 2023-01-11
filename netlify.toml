@@ -1,0 +1,15 @@
+# Configuration for a plugin published to npm
+[[plugins]]
+ package = "@netlify/plugin-lighthouse"
+ 
+  [[plugins.inputs.audits]]
+    output_path="reports/accueil.html"
+    path = "index.html"
+
+  [[plugins.inputs.audits]]
+    output_path = "reports/slider.html"
+    path = "slider.html" #le chemin du fichier à tester
+    
+  [[plugins.inputs.audits]]
+    output_path = "reports/fr/index.html"
+    path = "/fr/index.html"
